@@ -6,20 +6,29 @@ It has two classes: `Ext.ux.WebSocket` and `Ext.ux.WebSocketManager`<br/>
 The first one is a wrapper for standard HTML5 WebSocket and it provides a lot of interesting and easy-to-use features.
 The second one is a singleton to register different Ext.ux.WebSocket and it provides functions to work with every registered websocket at the same time.
 
+## ExtJS 6
+The new version of ExtJS 6 has requested to make a new major version of `ExtJS-WebSocket`.
+Now, this new major version **v2.0.0** is located on the master branch.
+
 ## ExtJS 5
-The new version of ExtJS 5 has requested to make a new major version of `ExtJS-WebSocket`.
-Now, this new major version **v1.0.1** is located on the master branch.
+The earlier version **v1.0.1** works with ExtJS 5.1.0.
 
 ## ExtJS 4 & Sencha Touch 2
-It's possible to work either with ExtJS 4 and Sencha Touch 2 with previous version **v0.0.6**
+It's possible to work either with ExtJS 4 and Sencha Touch 2 with previous version **v0.0.6**.
 
 ## Install via Bower
 First of all, install [**Bower**](http://bower.io/).
 
-Then install `Ext.ux.WebSocket` (version v1.x.x for ExtJS 5):
+Then install `Ext.ux.WebSocket` (version v2.x.x for ExtJS 6):
 
 ```bash
 $ bower install ext.ux.websocket
+```
+
+Or install `Ext.ux.WebSocket` (version v1.0.1 for ExtJS 5):
+
+```bash
+$ bower install ext.ux.websocket#1.0.1
 ```
 
 Or install `Ext.ux.WebSocket` (version v0.0.6 for ExtJS 4 & Sencha Touch 2):
