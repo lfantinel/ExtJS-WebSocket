@@ -426,8 +426,11 @@ Ext.define('Ext.ux.WebSocket', {
              msg.data : data to be handle
              */
             var msg = Ext.JSON.decode(message.data);
-            me.fireEvent(msg.event, me, msg.data);
-            me.fireEvent('message', me, msg);
+	    if (msg.event) {
+                me.fireEvent(msg.event, me, msg.data);
+	    else {
+                me.fireEvent('message', me, msg);
+	    }
         }
         catch (err) {
             if (Ext.isString(message.data)) me.fireEvent(message.data, me, message.data);
